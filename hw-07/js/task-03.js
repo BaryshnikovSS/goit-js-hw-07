@@ -6,8 +6,6 @@ export function task_03() {
 
     // В HTML есть список ul#gallery.
 
-    /* <ul id="gallery"></ul> */
-
     const unList = document.createElement('ul');
     unList.id = 'gallery';
     unList.style.display = 'flex';
@@ -48,7 +46,5 @@ export function task_03() {
     }
 
     createUnList(images, unList);
-
-
 
 }

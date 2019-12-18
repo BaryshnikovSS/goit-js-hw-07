@@ -92,8 +92,6 @@ export function task_01() {
   createUnList(baza, infoList);
   document.body.appendChild(infoList);
 
-  console.log(infoList);
-
   // Напиши скрипт, который выполнит следующие операции.
 
   // Посчитает и выведет в консоль количество категорий в ul#categories, то есть элементов li.item. 
@@ -105,10 +103,6 @@ export function task_01() {
   // и количество элементов в категории (всех вложенных в него элементов li).
 
   Array.from(infoList.getElementsByTagName('h2')).forEach((value, indx) => console.log(`В категории ${value.innerText} количество вложенных ел-тов ${infoList.querySelectorAll('ul')[indx].children.length}`));
-  // Array.from(infoList.getElementsByClassName('item').forEach())
-  // console.log(infoList.querySelector('ul').children.length)
-
-
 
   // Например для первой категории получится:
 
@@ -116,38 +110,3 @@ export function task_01() {
   // Количество элементов: 4
 
 }
-
-//===========================================================================
-
-// const infoList = document.createElement('ul');
-// infoList.id = 'categories';
-
-// const createUnList = function (arr, title, ul) {
-
-//     const getList = function (arr, title) {
-//         const mainTitle = document.createElement('h2');
-//         mainTitle.innerText = title;
-//         ul.appendChild(mainTitle);
-
-//         const unList = document.createElement('ul');
-//         arr.forEach(elem => {
-//             const listItem = document.createElement('li');
-//             listItem.innerText = elem;
-//             unList.appendChild(listItem);
-//         });
-
-//         ul.appendChild(unList);
-//     }
-
-//     getList(arr, title)
-
-// }
-
-
-// const animals = createUnList(['Кот', 'Хомяк', 'Лошадь', 'Попугай'], 'Животные', infoList);
-// const products = createUnList(['Хлеб', 'Петрушка', 'Творог'], 'Продукты', infoList);
-// const tecnology = createUnList(['HTML', 'CSS', 'JavaScript', 'React', 'Node'], 'Технологии', infoList);
-
-// console.log(infoList);
-
-// document.body.appendChild(infoList);

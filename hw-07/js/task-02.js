@@ -4,8 +4,6 @@ export function task_02() {
 
     // В HTML есть пустой список ul#ingredients.
 
-    // <ul id="ingredients"></ul>
-
     const unList = document.createElement('ul');
     unList.id = 'ingredients';
 
@@ -30,6 +28,5 @@ export function task_02() {
     }
 
     getList(ingredients, unList);
-
 
 }

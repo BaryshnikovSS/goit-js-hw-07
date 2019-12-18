@@ -7,7 +7,7 @@ import {task_04} from './task-04.js'
 import {task_05} from './task-05.js'
 import {task_06} from './task-06.js'
 import {task_07} from './task-07.js'
-import {task_08} from './task-08.js'
+// import {task_08} from './task-08.js'
 
 
     let inputMessage = prompt('Пожалуйста, выберите номер задание от 1 до 10!');
@@ -48,10 +48,6 @@ import {task_08} from './task-08.js'
 
             case 7:
                 task_07();
-                break;
-
-            case 8:
-                task_08();
                 break;
 
             default:
